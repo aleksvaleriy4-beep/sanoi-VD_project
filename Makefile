@@ -21,3 +21,9 @@ VD-calc:
 
 VD-gcd:
 	uv run VD-gcd
+
+VD-progression:
+	uv run VD-progression
+
+VD-prime:
+	uv run VD-prime
