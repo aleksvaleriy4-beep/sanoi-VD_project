@@ -1,27 +1,9 @@
-import random
-
-import prompt
+from VD_games import engine
+from VD_games.games import even
 
 
 def main():
-    print("Welcome to the VD-games!")
-    name = prompt.string("May I have your name? ")
-    print(f"Hello, {name}!")
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    for _ in range(3):
-        number = random.randint(1, 100)
-        print(f"Question: {number}")
-        answer = prompt.string("Your answer: ")
-        correct = "yes" if number % 2 == 0 else "no"
-        if answer != correct:
-            print(
-                f"'{answer}' is wrong answer ;(. "
-                f"Correct answer was '{correct}'."
-            )
-            print(f"Let's try again, {name}!")
-            return
-        print("Correct!")
-    print(f"Congratulations, {name}!")
+    engine.run(even)
 
 
 if __name__ == "__main__":

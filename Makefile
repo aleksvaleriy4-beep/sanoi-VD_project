@@ -15,3 +15,9 @@ lint:
 
 VD-even:
 	uv run VD-even
+
+VD-calc:
+	uv run VD-calc
+
+VD-gcd:
+	uv run VD-gcd
