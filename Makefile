@@ -9,3 +9,9 @@ build:
 
 package-install:
 	uv tool install --force dist/*.whl
+
+lint:
+	uv run ruff check VD_games
+
+VD-even:
+	uv run VD-even
